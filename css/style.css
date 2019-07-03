@@ -29,6 +29,15 @@ button {
     padding: 48px;
 }
 
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
 /* HEADER */
 
 .logo {
@@ -74,11 +83,19 @@ hr {
     height: 900px;
     margin: 40px auto;
 }
+    @media screen and (max-width: 501px) {
+        .bg-image {
+            height: 300px;
+        }
+    }
 
 .bg-image img {
     width: 100%;
     height: 100%;
 }
+    @media screen and (max-width: 501px) {
+        height: 200px;
+    }
 
 /* PROJECTS SECTION */
 
@@ -93,6 +110,10 @@ hr {
         }
     }
 
+.projects-header {
+    margin: 60px 0 10px 0;
+}
+
 .project-container {
     width: 33.3333%;
     justify-content: center;
@@ -103,14 +124,12 @@ hr {
             width: 100%;
             margin: 50px 0;
         }
-        
     }
-
 
 .first-project-container {
     margin: 0;
 }
 
 .project-title {
-    font-size: 3rem;
+    text-align: center;
 }
