@@ -87,20 +87,25 @@ hr {
     width: 100%;
     justify-content: center;
 }
-
-.project-container {
-    width: 33.3333%;
-    justify-content: center;
-}
-    @media screen and (max-width: 480px) {
-        .project-container {
-            width: 100%;
+    @media screen and (max-width: 501px) {
+        .projects-section {
+            display: block;
         }
     }
 
 .project-container {
+    width: 33.3333%;
+    justify-content: center;
     margin: 0 0 0 30px;
 }
+    @media screen and (max-width: 501px) {
+        .project-container {
+            width: 100%;
+            margin: 50px 0;
+        }
+        
+    }
+
 
 .first-project-container {
     margin: 0;
