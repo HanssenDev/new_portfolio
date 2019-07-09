@@ -14,6 +14,11 @@ html {
     vertical-align: baseline;
     border: 0;
 }
+    @media screen and (max-width: 900px) {
+        html {
+            font-size: 9px;
+        }
+    }
 
 img {
     max-width: 100%;
@@ -47,34 +52,38 @@ h3 {
     font-size: 2.5rem;
 }
 
+
 /* HEADER */
 
 .logo {
     float: left;
 }
-
-.logo img {
-    height: 100px;
-}
+    @media screen and (max-width: 785px) {
+        .logo {
+            float: none;
+            text-align: center;
+        }
+    }
 
 .title {
     float: right;
     text-align: right;
     text-transform: uppercase;
 }
-    @media screen and (max-width: 501px) {
+    @media screen and (max-width: 785px) {
         .title {
             text-align: center;
+            float: none;
         }
     }
 
-.title h1 {
+.name {
     font-weight: 300;
     font-size: 4rem;
     margin: 0;
 }
 
-.title p {
+.title-role {
     font-size: 2.4rem;
 }
 
@@ -98,31 +107,23 @@ hr {
 
 /* HERO IMAGE */
 
-.bg-image {
+.hero-container {
     width: 100%;
-    height: 900px;
     margin: 40px auto;
 }
-    @media screen and (max-width: 501px) {
-        .bg-image {
-            height: 300px;
-        }
-    }
 
-.bg-image img {
+.hero-img {
     width: 100%;
     height: 100%;
 }
-    @media screen and (max-width: 501px) {
-        height: 200px;
-    }
 
 /* PROJECTS SECTION */
 
 .projects-section {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
     @media screen and (max-width: 501px) {
         .projects-section {
@@ -133,35 +134,41 @@ hr {
 .projects-header {
     margin: 60px 0 10px 0;
 }
-    @media screen and (max-width: 501px) {
-        .projects-header h2 {
+    @media screen and (max-width: 785px) {
+        .section-title {
             text-align: center;
         }
     }
 
 .project-container {
-    width: 33.3333%;
-    justify-content: center;
-    margin: 0 0 0 30px;
+    width: 31%;
+    /* margin: 0 0 0 30px; */
 }
-    @media screen and (max-width: 501px) {
+    @media screen and (max-width: 900px) {
         .project-container {
-            width: 100%;
-            margin: 50px 0;
+            width: 48%;
+            margin: 0 0 20px;
         }
     }
 
-.image-container {
-    height: 330px;
+    @media screen and (max-width: 501px) {
+        .project-container {
+            width: 100%;
+            margin: 40px 0;
+        }
+    }
+
+.img-container {
+    /* height: 330px; */
 }
     @media screen and (max-width: 501px) {
-        .image-container {
-            height: 260px;
+        .img-container {
+            /* height: 260px; */
         }
     }
 
 .first-project-container {
-    margin: 0;
+    /* margin: 0; */
 }
 
 .project-title {
